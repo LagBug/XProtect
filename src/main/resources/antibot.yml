@@ -1,0 +1,79 @@
+# This is the file to configure the anti-bot settings
+
+settings: #A variety of settings for the antibot
+  persistent: false #Specifies if the checks below should happen no matter if the player is verified
+
+antibot: #A variety of features to prevent bot attacks on your server
+  hardLock:
+    enabled: true
+    requiredLocks: 5
+    lockFor: 30
+  joinLimiter: #Limits the connection of players to the server per a specified amount of seconds
+    enabled: true
+    seconds: 2
+    players: 1
+  ipLimiter: #Limits the same IPs that can be online at the same time
+    enabled: true
+    limit: 3
+  antiBadConnection: #Blocks any bad connection. A bad connection is based on the history of the IPs  
+    enabled: true
+    blocks:
+      bot: true #Blocks IPs that are flagged as potential bots
+      abuse: true #Blocks IPs that are recorded to have an abuse history
+      vpn: true #Block any VPN connections
+      fraudScore: 85 #Blocks player whose IP's fraud score is above this value
+  apis: #A variety of different services to never run out of request
+    ipqualityscore: #Usage of https://www.ipqualityscore.com/ which is limited to 5000 requests/month
+      enabled: true
+      apiKey: "" #Create an account on https://www.ipqualityscore.com/create-account and then copy and paste your API key from https://www.ipqualityscore.com/documentation/proxy-detection/overview
+    proxycheck: #Usage of https://proxycheck.io/ to provide VPN/geolocation information.
+      enabled: true
+      apiKey: "111111-222222-333333-444444" #This is the default API key which provides 100 requests/day. Sign up for 1000/day
+    getIpIntel: #Usage of https://getipintel.net/ to provide fraud information
+      enabled: true
+      email: "" #Your email is used as your API key for this service
+    ipstack:  #Usage of https://ipstack.com/ to provide VPN/Proxy information. The requests are limited to more than 10000/month
+      enabled: true
+      apiKey: "" #Sign-up in order to get an API key 
+    ipApi: #Usage of https://ip-api.com/ to provide VPN & other data. It limits the requests to 45/minute
+      enabled: true
+    ipApiCo: #Usage of https://ipapi.co/ to provide location information. It limits the requests to 30000/month
+      enabled: true
+    teohIO: #Usage of https://ip.teoh.io/vpn-proxy-api to provide VPN/Proxy information. The requests are limited to more than 1000/day
+      enabled: true
+  nameChecking:
+    enabled: true
+    contains:
+      - "mcstorm"
+      - "mcspam"
+      - "mcdrop"
+      - "bot"
+      - "spam"
+      - "spammer"
+  countryChecking:
+    enabled: true
+    type: "WHITELIST" #The available types are [WHITELIST, BLACKLIST].
+    list:
+      - "US"
+      - "CA"
+      - "FR"
+      - "GB"
+      - "RU"
+      - "DE"
+      - "PL"
+      - "GR"
+      - "FI"
+      - "AU"
+      - "AT"
+      - "BE"
+      - "EC"
+      - "IT"
+      - "CN"
+onAttack:
+  actionbar: true #If enabled and the server is under attack, an actionbar message will be shown to all admins
+  cleanConsole: true #If enabled and the server is under attack, the server console will remain mostly clean
+
+onBotDetect:
+  - "BLACKLIST;;&c> &7You have been detected as a potential bot"
+  - "BAN_IP;;&c> &7You have been detected as a potential bot"
+  - "BAN;;&c> &7You have been detected as a potential bot"

@@ -1,0 +1,93 @@
+# This is the file to configure the captcha settings
+
+settings: #Some general settings about the captchas
+  notifyOn: #Should players with the permission captcha.notify be notified when a player fails or completes a captcha?
+    fail: true
+    complete: false
+  bypass: false #If this is true and the player has the bypass permission, they will not be asked for a captcha
+  solveTime: 25 #The amount of time, in seconds, before a player gets kicked for not solving the captcha
+  delay: 0 #Delay the captcha on join, you might want this in order to appear after other messages are sent
+  sendThrough: "CHAT" #How should messages be sent? Available options are: [CHAT, TITLES, ACTIONBAR]
+  maxCaptchaFail: 3 #If a player fails the captcha x consecutive times the onMultipleCaptchaFail will be run
+  enabled: true
+
+captchaItem: #The item given in drop and map captcha
+  name: "&6Captcha Verification" #The name of the item
+  slot: 0 #The slot the item should be added
+
+requireCaptcha: #Captcha test can be asked in these events
+  onJoin: true
+
+whileOnCaptcha: #Which events should be cancelled when someone has still not verified himself 
+  blockMovement: true
+  blockInteraction: true
+  blockItemDrop: true
+  blockBlockPlacement: true
+  blockBlockBreaking: true
+  blockDamage: true
+  blockInventoryMovement: true
+  blockCommands: true #There is a list below where you can whitelist commands
+  blockChatReceiving: true #Block the player from receiving chat messages
+  hidePlayer: true #Specifies if the player should be invisible while on captcha verification
+
+onCaptchaSuccess: {} #A list of actions you can do once a player passes the captcha test
+   #- "BUNGEECORD;;hub" #If that is uncommented, the user will be sent to the specified bungeecord server
+
+onCaptchaFail: #A list of actions you can do if a player fails the test
+  - "KICK;;&c> &7You have failed the captcha test"
+
+onMultipleCaptchaFail: #What should happen when a player fails the captcha too many times?
+  - "TEMPBAN;;&c> You have failed the captcha too many times;;300" #Temporary bans the player after too many failed attempts
+
+onCaptchaInactivity: #What happens if the player hasn't solved the captcha within the given time
+  - "KICK;;&c> &7You should have solved the captcha"
+
+whitelistedCommands: #Commands that can be used when player is under captcha verification
+  - "login"
+  - "register"
+  
+
+captchas: #A list of all the captchas with options about them
+  map:
+    enabled: true
+    lines: 50
+    linesColor: BLACK
+    textColor: RED
+  picture: #Head over to /pictures/ and add your images. The name of the image, without it's extension will be used as a code
+    enabled: true
+  gui:
+    enabled: true
+    title: "Click on the &6%item%"
+    slots: 27
+  different:
+    enabled: true
+    title: "Click on the different item" 
+    same:
+      item: "REDSTONE_BLOCK;1;0"
+      name: "&cDo not click here"
+      lore: {}
+    different:
+      item: "EMERALD_BLOCK;1;0"
+      name: "&aClick here"
+      lore: {}
+    slots: 9
+  equation:
+    enabled: true
+    range:
+      min: 1
+      max: 15
+  code:
+    enabled: true
+  color:
+    enabled: true
+  sneak:
+    enabled: true
+  jump:
+    enabled: true
+  drop:
+    enabled: true
+    item: APPLE
+  slot:
+    enabled: true
+  reverse:
+    enabled: true

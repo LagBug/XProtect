@@ -1,0 +1,37 @@
+# Thank you so much for purchasing my plugin,
+# it really means a lot to me!
+# __   _______           _            _   
+# \ \ / /  __ \         | |          | |  
+#  \ V /| |__) | __ ___ | |_ ___  ___| |_ 
+#   > < |  ___/ '__/ _ \| __/ _ \/ __| __|
+#  / . \| |   | | | (_) | ||  __/ (__| |_ 
+# /_/ \_\_|   |_|  \___/ \__\___|\___|\__|
+#
+# This is a file to help you configure settings to your likings. It is recommended
+# to leave everything as it is, but, if you know what you're doing, feel free to change
+# it. If you do not understand what something does, please leave it as it is and ask for help
+
+languageFile: "en_US" #The language file that should be used. Use the file name without .yml from the /lang/ folder 
+prefix: " &c> &7" #The prefix that is then replaced in the language file by %prefix%
+updateChecker: true #Specifies whether or not the update checker should work. If set to false, your server will start up faster
+debug: true #If set to true, everything that is happening and is related to the plugin will be logged in the console
+saveDataEvery: 10 #Specifies every how many minutes the data (verified player, blocked bots, etc.) should be saved. If an attack is happening, this will be skipped to reduce CPU & RAM usage
+
+storage: #Information on how user data should be saved 
+  type: "FLAT" #Available types are [MYSQL, FLAT].
+  mysql:
+    host: ""
+    database: ""
+    username: ""
+    password: ""
+    port: 3306
+    statement: "?autoReconnect=true&useUnicode=true"
+    tables:
+      verified: "verified"
+      blacklisted: "blacklisted"
+
+dependencies: #Various information about the dependencies that can be used
+  AuthMe: #Settings for a variety of soft-dependencies
+    forceDisable: false 
+  ProtocolLib:
+    forceDisable: false

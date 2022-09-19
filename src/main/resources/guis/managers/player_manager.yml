@@ -1,0 +1,157 @@
+title: "XProtect > Player Manager"
+slots: 27
+refresh: 20
+contents:
+  0:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  2:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  8:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  9:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  11:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  16:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  17:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  18:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  20:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  25:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  26:
+    item: "BARRIER;1;9"
+    name: "&fGo Back"
+    lore: {}
+    action: "GO_BACK"
+  1:
+    item: "NAME_TAG;1;0"
+    name: "&cPlayer Statistics"
+    lore:
+     - "&7A variety of statistics about this player"
+     - ""
+     - "&6Server:"
+     - " &7Play Time: &e%statistic_time_played%"
+     - " &7Times Left: &c%statistic_leave_game%"
+     - "&6Player:"
+     - " &7Total Kills: &a%statistic_player_kills%"
+     - " &7Total Deaths: &c%statistic_deaths%"
+     - " &7Last Death: &6%statistic_time_since_death%"
+     - " &7Damage (Taken/Dealt): &e%statistic_damage_taken%&7/&c%statistic_damage_dealt%"
+  10:
+    item: "BOOK;1;0"
+    name: "&cPlayer Information"
+    lore:
+     - "&7A variety of information about the player"
+     - ""
+     - "&6General:"
+     - " &7Name: &e%player_name%"
+     - " &7UUID: &e%player_uuid%"
+     - " &7IP: &c%player_ip%"
+     - " &7OP: &a%player_is_op%"
+     - " &7Location: &a%player_world% &7(&e%player_x%&7, &e%player_y%&7, &e%player_z%&7)"
+     - ""
+     - "&6Health:"
+     - " &7Health: &a%player_health%"
+     - " &7Food: &e%player_food_level%"
+  19:
+    item: "PAPER;1;0"
+    name: "&cCustom Information"
+    lore:
+     - "&7Custom information about this player"
+     - ""
+     - "&7Verified: &a%player_verified%"
+     - "&7Blacklisted: &a%player_blacklisted%"
+     - "&7Bot: &e%player_bot_status% &7(Based on a variety of tests)"
+     - "&7VPN/Proxy: &e%player_vpn%&7"
+     - "&7Fraud Score: &c%player_fraud_score%&7/&e100 &7(High risk above 85)"
+     - "&7Recent abuse: &e%player_recent_abuse% &7(Recent abuse done by this IP)"
+     - "&7Location: &a%player_country%&7, &e%player_city%&7, &c%player_region%"
+     - "&7Organisation: &e%player_organisation%"
+  3:
+    item: "WOOL;1;0"
+    name: "&fSwitch Verify"
+    action: "SWITCH_VERIFY"
+    lore:
+     - "&7The player's verification status is &a%player_verified% &7and"
+     - "&7by clicking here, this will change."
+  4:
+    item: "WOOL;1;1"
+    name: "&fSwitch Blacklist"
+    action: "SWITCH_BLACKLIST"
+    lore:
+     - "&7The player's blacklist status is &a%player_blacklisted% &7and"
+     - "&7by clicking here, this will change."
+  5:
+    item: "WOOL;1;2"
+    name: "&fTeleport Here"
+    action: "TELEPORT_HERE"
+    lore:
+     - "&7Click here to teleport this player to your location."
+  6:
+    item: "WOOL;1;3"
+    name: "&fTeleport There"
+    action: "TELEPORT_THERE"
+    lore:
+     - "&7Click here to teleport to this player."
+  7:
+    item: "WOOL;1;4"
+    name: "&fSet On Fire"
+    action: "SET_ON_FIRE"
+    lore:
+     - "&7By clicking here the player will be set on fire."
+  12:
+    item: "WOOL;1;5"
+    name: "&fClear Chat"
+    action: "CLEAR_CHAT"
+    lore:
+     - "&7Clicking the button will clear the chat for"
+     - "&7this specific player."
+  13:
+    item: "WOOL;1;6"
+    name: "&fSwitch OP"
+    action: "SWITCH_OP"
+    lore:
+     - "&7The player's op status is &a%player_is_op% &7and"
+     - "&7by clicking here this will change."
+  14:
+    item: "WOOL;1;8"
+    name: "&fHeal"
+    action: "HEAL_PLAYER"
+    lore:
+     - "&7Click here to full the player's health."
+  15:
+    item: "WOOL;1;9"
+    name: "&fFeed"
+    action: "FEED_PLAYER"
+    lore:
+     - "&7Click here to full the player's food bar."
+  21:
+    item: "WOOL;1;10"
+    name: "&fCaptcha Test"
+    action: "CAPTCHA_TEST"
+    lore:
+     - "&7Send a captcha test to this player."

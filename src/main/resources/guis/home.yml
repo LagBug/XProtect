@@ -1,0 +1,103 @@
+title: "XProtect > Home GUI"
+slots: 27
+refresh: 20
+contents:
+  0:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  1:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  2:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  3:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  5:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  6:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  7:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  8:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  9:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  10:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  16:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  17:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  18:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  19:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  20:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  24:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  25:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  26:
+    item: "STAINED_GLASS_PANE;1;0"
+    name: ""
+    lore: {}
+  12:
+    item: "WOOL;1;14"
+    action: "GOTO_PLAYER_MANAGER"
+    name: "&cPlayer Manager"
+    lore:
+     - "&7Player related management."
+  14:
+    item: "WOOL;1;9"
+    action: "GOTO_SERVER_MANAGER"
+    name: "&cServer Manager"
+    lore:
+     - "&7Server related management"
+  13:
+    item: "NAME_TAG;1;0"
+    name: "&cBasic Information"
+    lore:
+     - "&7Basic information about the server and this plugin."
+     - ""
+     - "&6Plugin"
+     - " &7Author: &e%plugin_author%"
+     - " &7Version: &e%plugin_version% &8(&a%version_status%&8)"
+     - ""
+     - "&6Server:"
+     - " &7Version: &c%server_version%"
+     - " &7Players: &c%online_players%&8/&c%max_players%"
+     - " &7Used RAM: &6%used_ram%"
+     - " &7TPS: &a%tps%"

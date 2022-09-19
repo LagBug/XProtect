@@ -1,0 +1,29 @@
+# This is the file to configure the chat protection settings
+
+settings:
+  enabled: false #Do you want this to be enabled?
+  sensitivity: 80 #If the similarity is more than this value, block the message
+
+whitelist: #Whitelisted IPs/words
+  - "spigotmc.org"
+
+regexFilters:
+  advertising: 
+    expressions: 
+      - "\\b[0-9]{1,3}(\\.|dot|\\(dot\\)|-|;|:|,|(\\W|\\d|_)*\\s)+[0-9]{1,3}(\\.|dot|\\(dot\\)|-|;|:|,|(\\W|\\d|_)*\\s)+[0-9]{1,3}(\\.|dot|\\(dot\\)|-|;|:|,|(\\W|\\d|_)*\\s)+[0-9]{1,3}\\b"
+      - "\\b[0-9]{1,3}(\\.|dot|\\(dot\\)|-|;|:|,)+[0-9]{1,3}(\\.|dot|\\(dot\\)|-|;|:|,)+[0-9]{1,3}(\\.|dot|\\(dot\\)|-|;|:|,)+[0-9]{1,3}\\b"
+    actions:
+      - "CANCEL"
+      - "MESSAGE;; &c> &7Advertising IPs will get you muted on our server."
+  domain: 
+    expressions: 
+      - "[a-zA-Z0-9\\-\\.]+\\s?(\\.|dot|\\(dot\\)|;|:|,)\\s?(com|org|net|cz|co|uk|sk|biz|mobi|xxx|eu|io)\\b"
+    actions:
+      - "CANCEL"
+      - "MESSAGE;; &c> &7Advertising domains will get you muted on our server."
+  swearing:
+    expressions:
+      - "BAD_WORDS_FILE"
+    actions:
+      - "CANCEL"
+      - "MESSAGE;; &c> &7Using prohibited language will get you muted on our server."

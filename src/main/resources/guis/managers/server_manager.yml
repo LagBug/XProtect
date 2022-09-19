@@ -1,0 +1,126 @@
+title: "XProtect > Server Manager"
+slots: 27
+refresh: 20
+contents:
+  0:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  2:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  8:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  9:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  11:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  16:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  17:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  18:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  20:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  25:
+    item: "STAINED_GLASS_PANE;1;9"
+    name: ""
+    lore: {}
+  26:
+    item: "BARRIER;1;9"
+    name: "&fGo Back"
+    lore: {}
+    action: "GO_BACK"
+  1:
+    item: "NAME_TAG;1;0"
+    name: "&cServer Information"
+    lore:
+     - "&7A variety of information about the server."
+     - ""
+     - "&6Performance:"
+     - " &7TPS: &a%tps%"
+     - " &7RAM: &e%used_ram%&7/&c%max_ram% &7(&6%free_ram%&7 free)"
+     - " &7CPU: &c%cpu_processors% &7processors"
+     - ""
+     - "&6Server:"
+     - " &7Version: &c%server_version%"
+     - " &7Players: &c%online_players%&7/&c%max_players%"
+     - " &7Banned Players: &e%banned_players%"
+     - " &7Primary Thread: &a%is_primary_thread%"
+  10:
+    item: "BOOK;1;0"
+    name: "&cAntibot Information"
+    lore:
+     - "&7Get to know what's happening with bots in the server."
+     - ""
+     - "&6Antibot:"
+     - " &7Connections Checked: &e%connections_checked%"
+     - " &7Bots Blocked: &c%bots_blocked%"
+     - ""
+     - "&6Captcha:"
+     - " &7Successful Captchas: &a%successful_captchas%"
+     - " &7Failed Captchas: &c%failed_captchas%"
+  19:
+    item: "PAPER;1;0"
+    name: "&cScheduler Information"
+    lore:
+     - "&7Get information about active schedulers here."
+     - ""
+     - "&7Active Workers: &e%active_workers%"
+     - "&7Pending Tasks: &c%pending_tasks%"
+  3:
+    item: "WOOL;1;0"
+    name: "&fWhitelist"
+    action: "SWITCH_WHITELIST"
+    lore:
+     - "&7The whitelist status is currently &a%whitelist_status% &7and"
+     - "&7by clicking here, this will change."
+  4:
+    item: "WOOL;1;1"
+    name: "&fIdle Timeout"
+    action: "SWITCH_IDLE_TIMEOUT"
+    lore:
+     - "&7The idle timeout is currently &a%idle_timeout% &7and"
+     - "&7by clicking here, this will change."
+  5:
+    item: "WOOL;1;2"
+    name: "&fSave Players"
+    action: "SAVE_PLAYER_DATA"
+    lore:
+     - "&7Click here to save all the data of the players."
+  6:
+    item: "WOOL;1;3"
+    name: "&fReload Data"
+    action: "RELOAD_DATA"
+    lore:
+     - "&7Click here to reload all data."
+  7:
+    item: "WOOL;1;4"
+    name: "&fSet Max Slots"
+    action: "SWITCH_MAX_SLOTS"
+    lore:
+     - "&7The current max slots are &a%max_slots% &7and"
+     - "&7by clicking here, this will change."
+  12:
+    item: "WOOL;1;5"
+    name: "&fClear Chat"
+    action: "CLEAR_CHAT"
+    lore:
+     - "&7Clicking the button will clear the chat for all"
+     - "&7online players."

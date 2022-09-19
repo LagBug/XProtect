@@ -1,0 +1,6 @@
+main: me.lagbug.xprotect.bungee.XProtectBungee
+name: XProtect
+version: '${version}'
+description: An advanced plugin to separate bots from real players
+author: LagBug
+website: https://www.spigotmc.org/resources/67863/

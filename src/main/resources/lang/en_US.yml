@@ -1,0 +1,94 @@
+general:
+  updateAvailable: "%prefix% An update was found, click this message."
+  success: "%prefix% You've now passed the captcha test."
+  underAttack: "&fblocked(&4&lX&r &c%address%&f) &4&l*&r &fbots(&c%current_bots%&7/sec&f) &4&l*&r &ftotal(&c%total_bots%&f)"
+  notifications:
+    complete: "%prefix% (&c%player%&7) &7successfully completed the captcha."
+    fail: "%prefix% (&c%player%&7) &7failed to complete the captcha."
+
+commands:
+  verify:
+    add:
+      success: "%prefix% Successfully verified (&c%player%&7)."
+      already: "%prefix% The specified player (&c%player%&7) is already verified."
+    remove:
+      success: "%prefix% Successfully unverified (&c%player%&7)."
+      already: "%prefix% The specified player (&c%player%&7) is not verified."
+    check:
+      found: "%prefix% The player specified player (&c%player%&7) is &cverified&7." 
+      notFound: "%prefix% The player specified player (&c%player%&7) is &cnot verified&7."
+  blacklist:
+    add:
+      success: "%prefix% Successfully blacklisted (&c%player%&7)."
+      already: "%prefix% The specified player (&c%player%&7) is already blacklisted."
+    remove:
+      success: "%prefix% Successfully unblacklisted (&c%player%&7)."
+      already: "%prefix% The specified player (&c%player%&7) is not blacklisted."
+    check:
+      found: "%prefix% The player specified player (&c%player%&7) is &cblacklisted&7." 
+      notFound: "%prefix% The player specified player (&c%player%&7) is &cnot blacklisted&7."
+  test:
+    success: "%prefix% Successfully sent a captcha test to &c%player%&7."
+  list:
+    success: "%prefix% The available captcha types are:"
+    format: "  &7&l- &c%type% &7[&r&7%status%&7]"
+  reload:
+    success: "%prefix% The configuration files were successfully reloaded."
+
+instructions:
+  map: "%prefix% Type the &ccode &7that is displayed in the map."
+  gui: "%prefix% Please click on the &c%item%&7."
+  different: "%prefix% Please click on the different item."
+  equation: "%prefix% Please solve the following equation: &c%equation%&7."
+  order: "%prefix% Place in order (&c%symbol%&7) the following numbers: &c%numbers%&7."
+  picture: "%prefix% Type what you're seeing. Choose from [&c%list%&7]."
+  code: "%prefix% Type &c%code% &7in the chat."
+  color: "%prefix% Type what (&r%color%THIS&r&7) color's name is."
+  sneak: "%prefix% Please &csneak &7(usually using SHIFT key)."
+  jump: "%prefix% Please &cjump &7(usually using SPACE key)."
+  drop: "%prefix% Please &cdrop &7the item you're holding (usually using Q key)."
+  slot: "%prefix% Please move to the &c%slot%th &7slot of your hotbar."
+  reverse: "%prefix% Please reverse the letters of the following code: &c%code%&7."
+
+actions:
+  teleport:
+    here: "%prefix% Successfully teleported (&c%player%&7) to your location."
+    there: "%prefix% Successfully teleported to &c%player%&7's location."
+  whitelist:
+    enabled: "%prefix% Successfully &cenabled &7the whitelist."
+    disabled: "%prefix% Successfully &cdisabled &7the whitelist off."
+  op:
+    removed: "%prefix% Successfully removed OP permissions from (&c%player%&7)."
+    added: "%prefix% Successfully gave OP permissions to (&c%player%&7)."
+  reloadData:
+    success: "%prefix% Successfully reloaded the server's data."
+    fail: "%prefix% This can only be done in servers above &c1.14"
+  health:
+    heal: "%prefix% Successfully healed (&c%player%&7)."
+    feed: "%prefix% Successfully fed (&c%player%&7)."
+  fire: "%prefix% Successfully set (&c%player%&7) on fire."
+  cancel: "%prefix% Successfully canceled the current action."
+  idleTimeout: "%prefix% Successfully set the idle timeout to &c%idleTimeout%&7."
+  savePlayers: "%prefix% Successfully saved player's data."
+  maxSlots: "%prefix% Successfully set the max slots to &c%maxSlots%&7."
+  clearChat:
+    player: "%prefix% Successfully cleared the chat for (&c%player%&7)."
+    global: "%prefix% Successfully cleared the global chat."
+
+kick:
+  restart: "&7The server has restarted please join again later"
+  locked: "&7Too many players are joining at the same time"
+  ip: "&7You can only have online up to &73 &7accounts at the same time"
+  bot: "&7Your IP is linked to bot activity so we can not allow you to join"
+  abuse: "&7Your IP is linked to recent abuse, hence why you can not join"
+  risk: "&7Your IPs fraud score is too risky, hence why you can not join"
+  vpn: "&7VPNs or proxies are not allowed in this server"
+  blacklisted: "&7You have been blacklisted from the server"
+  name: "&7Your name indicates that you're a potential bot"
+  country: "&7Your country is not allowed to join our server"
+
+errors:
+  onlyPlayers: "%prefix% Only players can use this command."
+  noPermissions: "%prefix% You do not have enough permissions to do this."
+  playerNull: "%prefix% The specified player does not seem to be online."
+  wrongUsage: "%prefix% The right usage is &c%usage%"

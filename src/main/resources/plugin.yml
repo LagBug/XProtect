@@ -1,0 +1,11 @@
+name: XProtect
+version: '${version}'
+main: me.lagbug.xprotect.spigot.XProtect
+description: An advanced plugin to separate bots from real players.
+author: LagBug
+website: https://www.spigotmc.org/resources/67863/
+softdepend: [AuthMe, ProtocolLib, PlaceholderAPI]
+commands:
+ protect:
+  aliases: [xprotect, protector, protection, p, manager, servermanager, admingui, admin, captcha, captchax]
+  description: The main command for this plugin.
