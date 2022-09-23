@@ -8,6 +8,11 @@ import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * MySQL utility class to easily perform queries on the MySQL database
+ *
+ * @version 1.0
+ */
 public class MySQL {
 
 	private static String host, database, username, password, statement;

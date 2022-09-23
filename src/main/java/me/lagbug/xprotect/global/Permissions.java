@@ -27,6 +27,6 @@ public class Permissions {
 	public static final String BLACKLIST = "xprotect.blacklist";
 	
 	//All the permissions given as a List
-	public static final List<String> ALL_PERMISSIONS = Arrays.asList(ALL, USE, BYPASS, NOTIFY, ADD, REMOVE, CHECK, RELOAD, TEST, DEBUG, UPDATE, LIST);
+	public static final List<String> ALL_PERMISSIONS = Arrays.asList(ALL, BLACKLIST, USE, BYPASS, NOTIFY, ADD, REMOVE, CHECK, RELOAD, TEST, DEBUG, UPDATE, LIST);
 	
 }

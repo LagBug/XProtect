@@ -45,6 +45,17 @@ import me.lagbug.xprotect.spigot.utils.SpigotConsoleFilter;
 import me.lagbug.xprotect.spigot.utils.SpigotGlobalSettings;
 import me.lagbug.xprotect.spigot.utils.captcha.Captcha;
 
+/**
+ * The main class of XProtect. Plugin initialization happens here,
+ * while also including a variety of variables and methods in use
+ * by other classes.
+ *
+ * XProtect aims to be an effective and performance based anti-bot, captcha, and
+ * overall protection system for Spigot servers.
+ *
+ * Spigot: https://www.spigotmc.org/resources/67863/
+ * Github: https://github.com/LagBug/XProtect
+ */
 public class XProtect extends JavaPlugin {
 
 	private final Map<Player, String> toVerify = new HashMap<>();

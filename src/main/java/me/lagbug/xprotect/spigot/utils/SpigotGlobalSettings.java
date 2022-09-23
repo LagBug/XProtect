@@ -18,6 +18,11 @@ import me.lagbug.xprotect.global.antibot.checks.list.VerificationCheck;
 import me.lagbug.xprotect.global.enums.KickReason.KickMessage;
 import me.lagbug.xprotect.spigot.XProtect;
 
+/**
+ * Stores global settings and data used by the plugin
+ *
+ * @version 1.0
+ */
 public class SpigotGlobalSettings {
 
 	private final XProtect plugin = XProtect.getPlugin(XProtect.class);

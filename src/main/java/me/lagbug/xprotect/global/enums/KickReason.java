@@ -29,11 +29,12 @@ public enum KickReason {
 	public String getKickMessage() {
 		return message;
 	}
-	
+
+	// A list of the kick messages used by the plugin
 	public static class KickMessage {
 		public static String BLACKLISTED = "You have been blacklisted from the server";
 		public static String NAME = "Your name indicates that you're a potential bot";
-		public static String IP = "You can only have online up to &73 &7accounts at the same time";
+		public static String IP = "You can only have online up to 3 accounts at the same time";
 		public static String LOCKED = "Too many players are joining at the same time";
 		public static String BOT = "Your IP is linked to bot activity so we can not allow you to join";
 		public static String ABUSE = "Your IP is linked to recent abuse, hence why you can not join";
