@@ -1,15 +1,15 @@
 # XProtect
-XProtect is a new and effective plugin created with one goal in mind, maximum protection on minecraft servers. Every time a player joins a minecraft server, he will be presented a "challenge" which he will have to complete within a given amount of time. If he succeeds he will not be asked to verify himself again unless admins decide so. If he fails though, the punishment can be anything as you are free to change it to your preferences in the configuration file. There are currently over 12 captcha types in order to assure security in any minecraft server that runs this plugin.
+XProtect aims to be an effective and performance based anti-bot, captcha, and overall protection system for Spigot servers. It was originally intended to be just a captcha plugin, but has since been expanded way further.
 
 ## Prerequisites
 - Java 8 or above.
-- A spigot server
+- A spigot server running >= Spigot 1.8
 
 ## Installation
-In order to intall and get this plugin to work in your server, you'll first have to buy it from https://www.spigotmc.org/resources/captchax.67863/. After that is done, simply download it and put it in your plugins folder. Now run your server once and then stop it. Make any neccessary changes in the config or messages file and start your server again. You're now ready to go.
+While you are free to compile the plugin from here and use it on your server, it would be highly appreciated if you could support me and my work by buying it on Spigot (https://www.spigotmc.org/resources/xprotect67863/). After adding the jar on your server, you should configure the `config.yml` and rest configuration files to your liking. You are ready to go!
 
 ## In action
-These are a few images demostrating the plugin in action. You can also test it yourself by joining my minecraft server at `lagbug.me`
+These are a few images demonstrating the plugin in action. You can also test it yourself by joining my minecraft server at `lagbug.me`
 
 ![alt text](https://i.imgur.com/6p4OeB1.gif)
 ![alt text](https://i.imgur.com/GY7axhJ.gif)

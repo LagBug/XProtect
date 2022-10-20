@@ -2,8 +2,8 @@ plugins {
     id 'java'
 }
 
-group = 'me.lagbug.xprotect'
-version = '3.0.7'
+group = 'me.lagbug'
+version = '3.0.8'
 
 repositories {
     mavenCentral()
@@ -51,10 +51,6 @@ java {
     if (JavaVersion.current() < javaVersion) {
         toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
     }
-}
-
-jar {
-    destinationDirectory.set(file("C:\\Users\\Achilleas\\Desktop\\future-updates"))
 }
 
 tasks.withType(JavaCompile).configureEach {

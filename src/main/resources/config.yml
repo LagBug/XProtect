@@ -13,7 +13,7 @@
 
 languageFile: "en_US" #The language file that should be used. Use the file name without .yml from the /lang/ folder 
 prefix: " &c> &7" #The prefix that is then replaced in the language file by %prefix%
-updateChecker: true #Specifies whether or not the update checker should work. If set to false, your server will start up faster
+updateChecker: true #Specifies whether the update checker should work. If set to false, your server will start up faster
 debug: true #If set to true, everything that is happening and is related to the plugin will be logged in the console
 saveDataEvery: 10 #Specifies every how many minutes the data (verified player, blocked bots, etc.) should be saved. If an attack is happening, this will be skipped to reduce CPU & RAM usage
 
