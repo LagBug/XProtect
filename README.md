@@ -6,7 +6,7 @@ XProtect aims to be an effective and performance based anti-bot, captcha, and ov
 - A spigot server running >= Spigot 1.8
 
 ## Installation
-While you are free to compile the plugin from here and use it on your server, it would be highly appreciated if you could support me and my work by buying it on Spigot (https://www.spigotmc.org/resources/xprotect67863/). After adding the jar on your server, you should configure the `config.yml` and rest configuration files to your liking. You are ready to go!
+While you are free to compile the plugin from here and use it on your server, it would be highly appreciated if you could support me and my work by buying it on Spigot (https://www.spigotmc.org/resources/67863/). After adding the jar on your server, you should configure the `config.yml` and rest configuration files to your liking. You are ready to go!
 
 ## In action
 These are a few images demonstrating the plugin in action. You can also test it yourself by joining my minecraft server at `lagbug.me`
