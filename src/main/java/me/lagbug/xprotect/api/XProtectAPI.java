@@ -1,11 +1,13 @@
 package me.lagbug.xprotect.api;
 
-import java.util.UUID;
-
-import org.json.simple.JSONObject;
-
 import me.lagbug.xprotect.global.Checker;
 import me.lagbug.xprotect.global.antibot.apis.IpInfo;
+import me.lagbug.xprotect.global.antibot.checks.BotBlocker;
+import me.lagbug.xprotect.global.enums.KickReason;
+import org.json.simple.JSONObject;
+
+import java.net.InetAddress;
+import java.util.UUID;
 
 /**
  * Class used to access the API of the program
@@ -41,6 +43,10 @@ public class XProtectAPI {
 	 */
 	public static JSONObject getConnectionData(String address) {
 		return IpInfo.getInformation(address);
+	}
+
+	public static KickReason botBlockerResult(UUID uuid, String name, InetAddress address) {
+		return BotBlocker.getResult(uuid, name, address);
 	}
 
 }

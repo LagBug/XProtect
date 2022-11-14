@@ -19,7 +19,7 @@ public class XProtectBungee extends Plugin  {
 	
 	@Override
 	public void onEnable() {
-		System.out.println("WARNING ! This version of XProtect for Bungeecord is not supported and will NOT work at it's current state ! WARNING");
+		System.out.println("NOTE !! XProtect for Bungeecord is currently working partially. Some features are not yet supported. !! NOTE");
 		
 		instance = this;
 		fileUtils.initiate(this, "config.yml", "antibot.yml", "lang/en_US.yml", "data/data.yml", "data/blacklist.yml", "data/whitelist.yml");
