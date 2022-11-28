@@ -3,8 +3,10 @@ package me.lagbug.xprotect.global.antibot.checks.list;
 import java.net.InetAddress;
 import java.util.UUID;
 
+import me.lagbug.xprotect.global.antibot.apis.IpInfo;
 import me.lagbug.xprotect.global.antibot.checks.BotCheck;
 import me.lagbug.xprotect.global.enums.KickReason;
+import org.json.simple.JSONObject;
 
 public class CountryChecking extends BotCheck {
 
@@ -17,7 +19,8 @@ public class CountryChecking extends BotCheck {
 
 	@Override
 	protected KickReason runCheck(UUID uuid, String name, InetAddress address) {
-		String country = "US";
+		JSONObject ipInfo = IpInfo.getInformation(address.getHostAddress());
+		String country = (String) ipInfo.get("countryCode");
 
 		if (MODE.equals("WHITELIST") && !contains(country)) {
 			return KickReason.COUNTRY;
