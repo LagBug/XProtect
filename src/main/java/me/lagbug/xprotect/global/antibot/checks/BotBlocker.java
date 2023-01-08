@@ -1,19 +1,13 @@
 package me.lagbug.xprotect.global.antibot.checks;
 
-import java.net.InetAddress;
+import me.lagbug.xprotect.global.ProtectionValues;
+import me.lagbug.xprotect.global.antibot.checks.list.*;
+import me.lagbug.xprotect.global.enums.KickReason;
+import me.lagbug.xprotect.spigot.utils.DataValues;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
-
-import me.lagbug.xprotect.global.ProtectionValues;
-import me.lagbug.xprotect.global.antibot.checks.list.AntiBadConnection;
-import me.lagbug.xprotect.global.antibot.checks.list.CountryChecking;
-import me.lagbug.xprotect.global.antibot.checks.list.IpLimiter;
-import me.lagbug.xprotect.global.antibot.checks.list.JoinLimiter;
-import me.lagbug.xprotect.global.antibot.checks.list.NameChecking;
-import me.lagbug.xprotect.global.antibot.checks.list.VerificationCheck;
-import me.lagbug.xprotect.global.enums.KickReason;
-import me.lagbug.xprotect.spigot.utils.DataValues;
 
 /**
  * This class is used in order to block bots
@@ -32,12 +26,11 @@ public class BotBlocker {
 	 * 
 	 * @return - the reason the player should be kicked
 	 */
-	public static KickReason getResult(UUID uuid, String name, InetAddress address) {
+	public static KickReason getResult(UUID uuid, String name, String address) {
 		DataValues.CHECKED_CONNECTIONS++;
 		ProtectionValues.TOTAL_PLAYERS++;
 		ProtectionValues.PLAYERS++;
 		ProtectionValues.LAST_PLAYERS++;
-		//NotificationsTask.setLastAddress(address.getHostAddress());
 
 		// Looping through every check
 		for (BotCheck check : botChecks) {

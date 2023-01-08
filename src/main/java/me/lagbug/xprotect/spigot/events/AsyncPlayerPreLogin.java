@@ -17,7 +17,7 @@ public class AsyncPlayerPreLogin implements Listener {
 	public void onAsyncPlayerPreLogin(AsyncPlayerPreLoginEvent e) {
 		// We get the KickReason from the BotBlocker class
 		KickReason reason = BotBlocker.getResult(e.getUniqueId(), Bukkit.getOfflinePlayer(e.getUniqueId()).getName(),
-				e.getAddress());
+				e.getAddress().getHostAddress());
 		// If the player is not blocked, we simply return here
 		if (reason == KickReason.NOT_BLOCKED) {
 			return;

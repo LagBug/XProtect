@@ -1,13 +1,12 @@
 package me.lagbug.xprotect.global.antibot.checks.list;
 
-import java.net.InetAddress;
-import java.util.UUID;
-
-import org.json.simple.JSONObject;
-
 import me.lagbug.xprotect.global.antibot.apis.IpInfo;
 import me.lagbug.xprotect.global.antibot.checks.BotCheck;
 import me.lagbug.xprotect.global.enums.KickReason;
+import org.json.simple.JSONObject;
+
+import java.net.SocketAddress;
+import java.util.UUID;
 
 public class AntiBadConnection extends BotCheck {
 
@@ -21,9 +20,9 @@ public class AntiBadConnection extends BotCheck {
 	public static int FRAUD_SCORE = 85;
 
 	@Override
-	protected KickReason runCheck(UUID uuid, String name, InetAddress address) {
+	protected KickReason runCheck(UUID uuid, String name, String address) {
 		if (address != null) {
-			JSONObject ipInfo = IpInfo.getInformation(address.getHostAddress());
+			JSONObject ipInfo = IpInfo.getInformation(address);
 			
 			try {
 				if (BLOCK_VPNS && ipInfo.get("vpn").equals(true)) {

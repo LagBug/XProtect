@@ -1,14 +1,13 @@
 package me.lagbug.xprotect.global;
 
-import java.net.InetAddress;
+import me.lagbug.xprotect.global.enums.PlayerStatus;
+import me.lagbug.xprotect.spigot.utils.PlayerDataCache;
+import org.bukkit.OfflinePlayer;
+
+import java.net.SocketAddress;
 import java.util.ConcurrentModificationException;
 import java.util.Map;
 import java.util.UUID;
-
-import org.bukkit.OfflinePlayer;
-
-import me.lagbug.xprotect.global.enums.PlayerStatus;
-import me.lagbug.xprotect.spigot.utils.PlayerDataCache;
 
 /**
  * This class contains useful methods to get if a player is verified or do
@@ -43,8 +42,8 @@ public class Checker {
 	}
 
 	// The constructor using only an IP
-	public Checker(InetAddress address) {
-		this.address = address.getHostAddress();
+	public Checker(SocketAddress address) {
+		this.address = address.toString();
 	}
 
 	// The constructor using only an IP

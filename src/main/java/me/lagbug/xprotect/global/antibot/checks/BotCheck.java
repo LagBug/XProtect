@@ -1,9 +1,8 @@
 package me.lagbug.xprotect.global.antibot.checks;
 
-import java.net.InetAddress;
-import java.util.UUID;
-
 import me.lagbug.xprotect.global.enums.KickReason;
+
+import java.util.UUID;
 
 public abstract class BotCheck {
 	
@@ -13,7 +12,7 @@ public abstract class BotCheck {
 		BotCheck.isEnabled = isEnabled;
 	}
 	
-	protected abstract KickReason runCheck(UUID uuid, String name, InetAddress address);
+	protected abstract KickReason runCheck(UUID uuid, String name, String address);
 
 	protected boolean isEnabled() {
 		return isEnabled;

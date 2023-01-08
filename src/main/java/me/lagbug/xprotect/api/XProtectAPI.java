@@ -7,6 +7,7 @@ import me.lagbug.xprotect.global.enums.KickReason;
 import org.json.simple.JSONObject;
 
 import java.net.InetAddress;
+import java.net.SocketAddress;
 import java.util.UUID;
 
 /**
@@ -45,7 +46,7 @@ public class XProtectAPI {
 		return IpInfo.getInformation(address);
 	}
 
-	public static KickReason botBlockerResult(UUID uuid, String name, InetAddress address) {
+	public static KickReason botBlockerResult(UUID uuid, String name, String address) {
 		return BotBlocker.getResult(uuid, name, address);
 	}
 

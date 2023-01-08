@@ -13,7 +13,7 @@ public class PreLogin implements Listener {
 	@EventHandler
 	public void onPreLogin(PreLoginEvent e) {
 		PendingConnection connection = e.getConnection();
-		KickReason reason = BotBlocker.getResult(connection.getUniqueId(), connection.getName(), connection.getAddress().getAddress());
+		KickReason reason = BotBlocker.getResult(connection.getUniqueId(), connection.getName(), connection.getSocketAddress().toString());
 
 		if (reason == KickReason.NOT_BLOCKED) {
 			return;

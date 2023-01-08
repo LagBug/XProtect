@@ -34,7 +34,7 @@ public class PacketHandshake {
 				// If only the LockState is not open
 				if (ProtectionValues.LOCK_STATE != LockState.OPEN) {
 
-					KickReason reason = BotBlocker.getResult(null, null, e.getPlayer().getAddress().getAddress());
+					KickReason reason = BotBlocker.getResult(null, null, e.getPlayer().getAddress().getAddress().getHostAddress());
 					// If the player is not blocked we return here
 					if (reason == KickReason.NOT_BLOCKED) {
 						return;
