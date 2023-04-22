@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'me.lagbug'
-version = '3.1.1'
+version = '3.1.2'
 
 repositories {
     mavenCentral()
@@ -38,7 +38,7 @@ repositories {
 dependencies {
     compileOnly 'org.spigotmc:spigot:1.16.1-R0.1-SNAPSHOT'
     compileOnly 'net.md-5:bungeecord-api:1.19-R0.1-SNAPSHOT'
-    compileOnly 'me.clip:placeholderapi:2.11.2'
+    compileOnly 'me.clip:placeholderapi:2.11.3'
     compileOnly 'com.comphenix.protocol:ProtocolLib:4.8.0'
     compileOnly 'com.github.authme:authmereloaded:5.6.0-beta2'
 }
