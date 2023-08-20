@@ -3,6 +3,7 @@ package me.lagbug.xprotect.global.antibot.checks.list;
 import me.lagbug.xprotect.global.antibot.apis.IpInfo;
 import me.lagbug.xprotect.global.antibot.checks.BotCheck;
 import me.lagbug.xprotect.global.enums.KickReason;
+import me.lagbug.xprotect.spigot.XProtect;
 import org.json.simple.JSONObject;
 
 import java.net.SocketAddress;
