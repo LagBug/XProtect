@@ -14,8 +14,9 @@ public class AntiBadConnection extends BotCheck {
 		super(true);
 	}
 
+	private static XProtect plugin = XProtect.getPlugin(XProtect.class);
 	public static boolean BLOCK_BOTS = true;
-	public static boolean BLOCK_VPNS = true;
+	public static boolean BLOCK_VPNS = plugin.getConfig().getBoolean("blockVPN");
 	public static boolean BLOCK_ABUSE = true;
 	public static int FRAUD_SCORE = 85;
 
