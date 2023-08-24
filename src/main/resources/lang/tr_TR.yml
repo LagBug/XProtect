@@ -1,0 +1,94 @@
+general:
+  updateAvailable: "%prefix% Bir güncelleme bulundu, bu mesaja tıkla."
+  success: "%prefix% Captcha testini geçtiniz."
+  underAttack: "&fengellenenler(&4&lX&r &c%address%&f) &4&l*&r &fbotlar(&c%current_bots%&7/sn&f) &4&l*&r &ftoplamda(&c%total_bots%&f)"
+  notifications:
+    complete: "%prefix% (&c%player%&7) &7captchayı başarıyla tamamladın."
+    fail: "%prefix% (&c%player%&7) &7captcha tamamlanamadı."
+
+commands:
+  verify:
+    add:
+      success: "%prefix% Başarıyla doğrulandı (&c%player%&7)."
+      already: "%prefix% Belirtilen oyuncu (&c%player%&7) zaten doğrulandı."
+    remove:
+      success: "%prefix% Doğrulama başarıyla kaldırıldı (&c%player%&7)."
+      already: "%prefix% Belirtilen oyuncu (&c%player%&7) zaten doğrulanmadı."
+    check:
+      found: "%prefix% Oyuncu tarafından belirtilen oyuncu (&c%player%&7) &cdoğrulandı&7." 
+      notFound: "%prefix% Oyuncu tarafından belirtilen oyuncu (&c%player%&7) &cdoğrulanamadı&7."
+  blacklist:
+    add:
+      success: "%prefix% Başarıyla kara listeye alındı (&c%player%&7)."
+      already: "%prefix% Belirtilen oyuncu (&c%player%&7) zaten kara listede."
+    remove:
+      success: "%prefix% Kara listeden başarıyla kaldırıldı (&c%player%&7)."
+      already: "%prefix% Belirtilen oyuncu (&c%player%&7) kara listede değil."
+    check:
+      found: "%prefix% Oyuncu tarafından belirtilen oyuncu (&c%player%&7) &ckara listeye &7alındı." 
+      notFound: "%prefix% Oyuncu tarafından belirtilen oyuncu (&c%player%&7) &ckara listeye &7alınmadı."
+  test:
+    success: "%prefix% Captcha testi başarıyla &c%player% &7adlı oyuncuya gönderildi."
+  list:
+    success: "%prefix% Mevcut captcha türleri şunlardır::"
+    format: "  &7&l- &c%type% &7[&r&7%status%&7]"
+  reload:
+    success: "%prefix% Yapılandırma dosyaları başarıyla yeniden yüklendi."
+
+instructions:
+  map: "%prefix% Haritada görüntülenen &ckodu &7yazın."
+  gui: "%prefix% Lütfen &c%item%&7 adlı eşyaya tıklayın."
+  different: "%prefix% Lütfen farklı öğeye tıklayın."
+  equation: "%prefix% Lütfen aşağıdaki denklemi çözün: &c%equation%&7."
+  order: "%prefix% Aşağıdaki sayıları sıraya koyun (&c%symbol%&7): &c%numbers%&7."
+  picture: "%prefix% Gördüğünüzü yazın. Şuradan seçin [&c%list%&7]."
+  code: "%prefix% Sohbete &%code% &7kodunu yazın."
+  color: "%prefix% Sohbete bu rengin adını yazın (&r%color%BU&r&7)."
+  sneak: "%prefix% Lütfen &ceğilin &7(genellikle SHIFT tuşu)."
+  jump: "%prefix% Lütfen &czıplayın &7(geneliikle SPACE tuşu)."
+  drop: "%prefix% Lütfen tutuğunuz eşyayı &cattın &7(genellikle Q tuşu)."
+  slot: "%prefix% Lütfen envanterinizin &c%slot%. &7slotuna gidin."
+  reverse: "%prefix% Lütfen aşağıdaki kodun harflerini ters çevirerek yazın: &c%code%&7."
+
+actions:
+  teleport:
+    here: "%prefix% Bulunduğunuz yere başarıyla ışınlandı (&c%player%&7)."
+    there: "%prefix% &c%player%&7 adlı oyuncunun konumuna başarıyla ışınlandı."
+  whitelist:
+    enabled: "%prefix% Beyaz liste başarıyla &cetkinleştirildi&7."
+    disabled: "%prefix% Beyaz liste başarıyla &cdevre dışı &7bırakıldı."
+  op:
+    removed: "%prefix% (&c%player%&7) öğesinden OP izinleri başarıyla kaldırıldı."
+    added: "%prefix% (&c%player%&7) adlı oyuncuya başarıyla OP izinleri verildi."
+  reloadData:
+    success: "%prefix% Sunucunun verileri başarıyla yeniden yüklendi."
+    fail: "%prefix% Bu yalnızca &c1.14 üzerindeki sunucularda yapılabilir"
+  health:
+    heal: "%prefix% Başarıyla iyileştirildi (&c%player%&7)."
+    feed: "%prefix% Başarıyla beslendi (&c%player%&7)."
+  fire: "%prefix% (&c%player%&7) başarıyla ateşe verildi."
+  cancel: "%prefix% Mevcut eylem başarıyla iptal edildi."
+  idleTimeout: "%prefix% Boşta kalma zaman aşımını başarıyla &c%idleTimeout%&7 olarak ayarladınız."
+  savePlayers: "%prefix% Oyuncu verileri başarıyla kaydedildi."
+  maxSlots: "%prefix% Maksimum yuvayı başarıyla &c%maxSlots%&7 olarak ayarladınız."
+  clearChat:
+    player: "%prefix% (&c%player%&7) için sohbet başarıyla temizlendi."
+    global: "%prefix% Küresel sohbet başarıyla temizlendi."
+
+kick:
+  restart: "&7Sunucu yeniden başlatıldı lütfen daha sonra tekrar katılın"
+  locked: "&7Aynı anda çok fazla oyuncu katılıyor"
+  ip: "&7Aynı anda yalnızca &73 &7tane çevrimiçi hesaba sahip olabilirsiniz"
+  bot: "&7IPniz bot etkinliğine bağlı olduğundan katılmanıza izin veremeyiz"
+  abuse: "&7IP adresiniz yakın zamandaki suistimalle bağlantılı, dolayısıyla katılamıyorsunuz"
+  risk: "&7IP dolandırıcılık puanınız çok riskli, bu nedenle katılamıyorsunuz"
+  vpn: "&7Bu sunucuda VPNlere veya proxylere izin verilmiyor"
+  blacklisted: "&7Sunucu tarafından kara listeye alındınız"
+  name: "&7Adınız potansiyel bir bot olduğunuzu gösteriyor"
+  country: "&7Ülkenizin sunucumuza katılmasına izin verilmiyor"
+
+errors:
+  onlyPlayers: "%prefix% Bu komutu yalnızca oyuncular kullanabilir."
+  noPermissions: "%prefix% Bunu yapmak için yeterli izniniz yok."
+  playerNull: "%prefix% Belirtilen oyuncu çevrimiçi görünmüyor."
+  wrongUsage: "%prefix% Doğru kullanımı: &c%usage%"
