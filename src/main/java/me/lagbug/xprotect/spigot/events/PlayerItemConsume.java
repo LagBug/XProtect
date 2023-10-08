@@ -1,11 +1,9 @@
 package me.lagbug.xprotect.spigot.events;
 
 import me.lagbug.xprotect.spigot.XProtect;
-import me.lagbug.xprotect.spigot.utils.Utils;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
 
 /**
