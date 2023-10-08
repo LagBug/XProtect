@@ -2,6 +2,7 @@
 .idea/
 .vscode/
 bin/
+gradle/
 
 *.iml
 *.ipr
