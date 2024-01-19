@@ -6,8 +6,6 @@ import me.lagbug.xprotect.global.antibot.checks.BotBlocker;
 import me.lagbug.xprotect.global.enums.KickReason;
 import org.json.simple.JSONObject;
 
-import java.net.InetAddress;
-import java.net.SocketAddress;
 import java.util.UUID;
 
 /**

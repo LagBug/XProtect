@@ -1,7 +1,5 @@
 package me.lagbug.xprotect.spigot.events;
 
-import java.lang.reflect.InvocationTargetException;
-
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
