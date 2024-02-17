@@ -72,7 +72,11 @@ public class UpdateChecker {
     private UpdateResult getResult() {
     	try {
          	URLConnection con = url.openConnection();
-            this.newVersion = new BufferedReader(new InputStreamReader(con.getInputStream())).readLine();
+			try (BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()))) {
+				this.newVersion = reader.readLine();
+			} catch (IOException e) {
+				return UpdateResult.ERROR;
+			}
             
         	int currentV = Integer.parseInt(currentVersion.replace(".", ""));
         	int newV = Integer.parseInt(newVersion.replace(".", "").replace("-", ""));
@@ -103,6 +107,5 @@ public class UpdateChecker {
     
     public enum UpdateResult {
     	ERROR, FOUND, NOT_FOUND, DEVELOPMENT
-
     }
 }
